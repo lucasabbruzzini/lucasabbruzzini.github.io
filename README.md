@@ -1,6 +1,8 @@
 # LUCAS RODRIGUES ABBRUZZINI
 
-### lucas.abbruzzini@proton.me | +55 12996200140 | Uberlândia – Brazil | Brazilian | /in/lucasabbruzzini/
+### lucas.abbruzzini@proton.me | +55 12996200140 | Uberlândia – Brazil | Brazilian 
+
+/in/lucasabbruzzini/ | https://lucasabbruzzini.github.io/ 
 
 ## EXPERIENCE
 
