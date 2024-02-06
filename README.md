@@ -55,29 +55,29 @@ Universidade Federal de Uberlandia
 
 ## LANGUAGES
 
-Portuguese    Native
+Portuguese - Native
 
-English		    Fluent
+English - Fluent
 
-French		    Intermediate
+French - Intermediate
 
-Spanish		    Intermediate
+Spanish	- Intermediate
 
-German	Beginner
+German - Beginner
 
 ## SKILLS
 
-MS Office	  Advanced
+MS Office - Advanced
 
-Trello		  Intermediate
+Trello - Intermediate
 
-Python		  Intermediate
+Python - Intermediate
 
-SQL		      Intermediate
+SQL - Intermediate
 
-MATLAB	    Intermediate
+MATLAB - Intermediate
 
-Power BI	  Beginner
+Power BI - Beginner
 
 ## Projects
 
