@@ -2365,7 +2365,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		opacity: 1;
-		padding: 8em;
+		padding: 2em;
 	}
 
 	@media screen and (max-width: 1680px) {
