@@ -1,0 +1,41 @@
+/* Basic Reset for Nav Menu */
+nav.links {
+    background-color: #333; /* Background color of the menu */
+    position: fixed; /* Fix the menu to the top */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+nav.links ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make the list horizontal */
+    justify-content: center; /* Center the links */
+}
+
+nav.links li {
+    margin: 0 15px; /* Add space between links */
+}
+
+nav.links a {
+    display: block; /* Make links fill the list items */
+    padding: 15px 20px; /* Add padding to links */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: 16px;
+}
+
+nav.links a:hover {
+    background-color: #555; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Add padding to the body content */
+body {
+    padding-top: 60px; /* Adjust the padding to match the height of the fixed menu */
+}
+
+
+
