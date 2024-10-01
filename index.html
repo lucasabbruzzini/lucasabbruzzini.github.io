@@ -1,333 +1,212 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Lucas Rodrigues Abbruzzini</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Lucas Rodrigues Abbruzzini</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Internal CSS for Skill Bars */
+        .skills {
+            text-align: left;
+            text-indent: 1em;
+            font-size: small;
+            padding: 10px 0;
+            color: white;
+        }
+        .skill-container {
+            margin-bottom: 10px;
+        }
+        .center-text {
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Skill Bar Backgrounds */
+        .english, .portuguese, .french, .spanish, .german,
+        .office, .python, .sql, .rust, .c, .matlab, .git, .trello,
+        .jira, .postman, .devops, .bash, .html, .css, .js {
+            background-color: #bbbbbb;
+        }
+        /* Skill Bar Widths */
+        .english, .portuguese { width: 100%; }
+        .french, .spanish { width: 50%; }
+        .german { width: 20%; }
+        .office { width: 90%; }
+        .python, .sql { width: 50%; }
+        .rust, .c, .matlab, .git, .trello, .jira, .postman, .bash, .html, .css, .js { width: 30%; }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main Content -->
+        <div id="main">
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">CV</a></h1>
+                <h1><a href="pages/portfolio.html">Portfolio</a></h1>
+            </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            <!-- Experience Section -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h1>Experience</h1>
+                    </div>
+                </header>
 
-				<!-- Main -->
-			
-					<div id="main">
-						<!-- Header -->
-						<header id="header">
-							<h1><a href="index.html">CV</a></h1>
-							<h1><a href="pages/portfolio.html">Portfolio</a></h1>
-							<nav class="links">
+                <section>
+                    <h2>Tech Strategy Analyst</h2>
+                    <h3>Accenture</h3>
+                    <h3>05/2021 - Present</h3>
+                    <ul>
+                        <li><strong>Project & Program Management:</strong> Overseeing workstreams, managing timelines, resources, and aligning with objectives to ensure successful project delivery. Proactively addressing risks and resolving issues.</li>
+                        <li><strong>Python Development & Data Management:</strong> Building market data routines for risk management solutions, focusing on ETL processes, frontend integration, testing, and debugging for system reliability.</li>
+                        <li><strong>Data Analysis & Reporting:</strong> Conducting analysis, creating dashboards, and optimizing SQL queries to enhance reporting accuracy and decision-making.</li>
+                        <li><strong>Collaboration & Communication:</strong> Working with cross-functional teams to implement programs and connect technical and business leadership.</li>
+                        <li><strong>Strategic Problem Solving & Planning:</strong> Developing data-driven hypotheses, structuring problems, and planning roadmaps to support growth and innovation.</li>
+                        <li><strong>Business Case & IT Strategy:</strong> Assisting in creating actionable business cases and developing IT strategies, including opportunity assessments, systems, infrastructure, and architecture planning.</li>
+                    </ul>
+                </section>
 
-							</nav>
+                <section>
+                    <h2>Controls and Automation Engineer</h2>
+                    <h3>Dennis Group</h3>
+                    <h3>06/2020 - 04/2021</h3>
+                    <ul>
+                        <li>PLC Design and Programming (Allen Bradley/Rockwell, Schneider Electric). SCADA and HMI Systems Development (Allen Bradley/Rockwell, Wonderware). Process Network Infrastructure Design (Ethernet, Device Net, Control Net, AS-i, Modbus, etc.).</li>
+                        <li>Specification and Procurement. Control Panel and Installation Design (AutoCAD). Hardware, Instrumentation, and Network Configuration.</li>
+                        <li>P&ID and Bid Documentation for Electrical and Automation. Electrical Construction Management and Supervision. System Commissioning and Start-Up.</li>
+                    </ul>
+                </section>
 
-						</header>
+                <section>
+                    <h2>Controls and Automation Intern</h2>
+                    <h3>e-Solvere</h3>
+                    <h3>06/2020 - 04/2021</h3>
+                    <ul>
+                        <li>Startup that performs quality control using computational vision.</li>
+                        <li>Activities related to the construction of embedded systems, quality control tests, installation of operating systems, documentation, and process optimization.</li>
+                        <li>Conception of Industrial Communication and Automation projects.</li>
+                        <li>Helped the startup leave the incubator and start a new co-working space.</li>
+                        <li>Pitched to investors and participated in meetings with clients.</li>
+                    </ul>
+                </section>
+            </article>
 
-					<!-- Post -->
-					<article class="post">
-						<header>
-							<div class="title">
-								<h1>EXPERIENCE</h1>
-							</div>
-						</header>
+            <!-- Education Section -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h1>Education</h1>
+                    </div>
+                </header>
 
-						<h2>Tech Strategy Analyst</h2>
+                <section>
+                    <h2>MSc in Financial Engineering</h2>
+                    <h3>WorldQuant University</h3>
+                    <h3>10/2023 – Present</h3>
+                    <h3>GPA 89%</h3>
+                </section>
 
-						<h3>Accenture</h3>
-						<h3>05/2021 - Present</h3>
+                <section>
+                    <h2>MSc in Computer Science</h2>
+                    <h3>Universidade Federal de Uberlandia</h3>
+                    <h3>03/2021 – Interrupted</h3>
+                    <h3>GPA 3.6/4.0</h3>
+                </section>
 
-						<p>
-						    <ul>
-						        <li>
-						            <strong>Project & Program Management:</strong> Overseeing workstreams, managing timelines, resources, and aligning with objectives to ensure successful project delivery. Proactively addressing risks and resolving issues.
-						        </li>
-						        <li>
-						            <strong>Python Development & Data Management:</strong> Building market data routines for risk management solutions, focusing on ETL processes, frontend integration, testing, and debugging for system reliability.
-						        </li>
-						        <li>
-						            <strong>Data Analysis & Reporting:</strong> Conducting analysis, creating dashboards, and optimizing SQL queries to enhance reporting accuracy and decision-making.
-						        </li>
-						        <li>
-						            <strong>Collaboration & Communication:</strong> Working with cross-functional teams to implement programs and connect technical and business leadership.
-						        </li>
-						        <li>
-						            <strong>Strategic Problem Solving & Planning:</strong> Developing data-driven hypotheses, structuring problems, and planning roadmaps to support growth and innovation.
-						        </li>
-						        <li>
-						            <strong>Business Case & IT Strategy:</strong> Assisting in creating actionable business cases and developing IT strategies, including opportunity assessments, systems, infrastructure, and architecture planning.
-						        </li>
-						    </ul>
-						</p>
+                <section>
+                    <h2>Bachelor in Mechatronics Engineering</h2>
+                    <h3>Universidade Federal de Uberlandia</h3>
+                    <h3>08/2015 – 12/2019</h3>
+                    <h3>GPA 77/100</h3>
+                </section>
+            </article>
 
-						<h2>Controls and Automation Engineer</h2>
-						<h3>Dennis Group</h3>
-						<h3>06/2020 - 04/2021</h3>
-						<p>
-							<ul style="list-style-type: disc;">
-							
-									<li>PLC Design and Programming (Allen Bradley/Rockwell, Schneider Electric). SCADA and HMI Systems Development (Allen Bradley/Rockwell, Wonderware). Process Network Infrastructure Design (Ethernet, Device Net, Control Net, AS<span style='font-family:"Cambria Math",serif;'>‑</span>i, Modbus, etc.).</li>
-									<li>Specification and Procurement. Control Panel and Installation Design (AutoCAD). Hardware, Instrumentation, and Network Configuration.</li>
-									<li>P&amp;ID and Bid Documentation for Electrical and Automation. Electrical Construction Management and Supervision. System Commissioning and Start<span style='font-family:"Cambria Math",serif;'>‑</span>Up.</li>
-						
-							</ul>	
-						</p>
+            <!-- Certifications Section -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h1>Certifications</h1>
+                    </div>
+                </header>
 
+                <ul>
+                    <li>Google Cloud Digital Leader</li>
+                    <li>AWS Practitioner</li>
+                    <li>Google Azure Fundamentals</li>
+                    <li>Google Azure Data Fundamentals</li>
+                    <li>Google Azure AI Fundamentals</li>
+                    <li>SAFe® 5 Agilist</li>
+                    <li>Google Project Management Certificate</li>
+                    <li>LSE – MBA Essentials</li>
+                </ul>
+            </article>
+        </div>
 
-						<h2>Controls and Automation Intern</h2>
-						<h3>e-Solvere</h3>
-						<h3>06/2020 - 04/2021</h3>
-						<p>
-							<ul style="list-style-type: disc;">
-								<li> Startup that performs quality control using computational vision.</li>
-								<li> Activities related to construction of embedded systems, quality control tests, installation of operating system, documentation and process optimization.</li>
-								<li> Conception of Industrial Communication and Automation projects.</li>
-								<li> Helped the start-up leave the incubator and start new co-workspace.</li>
-								<li> Pitched to investor and participated in meeting with clients.</li>
-							</ul>	
-						</p>
-						<br>
-					</article>
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <!-- Intro -->
+            <section id="intro">
+                <a href="#" class="logo"><img src="pages/images/1649860029279.jpeg" alt="Avatar"></a>
+                <header>
+                    <h2>Lucas Rodrigues Abbruzzini</h2>
+                </header>
+            </section>
 
-						<!-- Post -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h1>EDUCATION</h1>
-								</div>
-							</header>
+            <!-- Skills -->
+            <section>
+                <h2 class="center-text">Languages</h2>
+                <div class="skill-container"><div class="skills english">ENGLISH</div></div>
+                <div class="skill-container"><div class="skills portuguese">PORTUGUESE</div></div>
+                <div class="skill-container"><div class="skills french">FRENCH</div></div>
+                <div class="skill-container"><div class="skills spanish">SPANISH</div></div>
+                <div class="skill-container"><div class="skills german">GERMAN</div></div>
 
-							<h2>MSc in Financial Engineering</h2>
-							<h3>WorldQuant University</h3>
-							<h3>10/2023 – Present </h3>
-							<h3>GPA 89%</h3>
-							<br>
-							
-							<h2>MSc in Computer Science</h2>
-							<h3>Universidade Federal de Uberlandia</h3>
-							<h3>03/2021 – Interrupted</h3>
-							<h3>GPA 3.6/4.0</h3>
-							<h3></h3>
-							<br>
+                <h2 class="center-text">Programming</h2>
+                <div class="skill-container"><div class="skills python">PYTHON</div></div>
+                <div class="skill-container"><div class="skills sql">SQL</div></div>
+                <div class="skill-container"><div class="skills matlab">MATLAB</div></div>
+                <div class="skill-container"><div class="skills rust">Rust</div></div>
+                <div class="skill-container"><div class="skills c">C</div></div>
+                <div class="skill-container"><div class="skills bash">Bash</div></div>
+                <div class="skill-container"><div class="skills css">CSS</div></div>
+                <div class="skill-container"><div class="skills html">HTML</div></div>
+                <div class="skill-container"><div class="skills js">JS</div></div>
 
-							<h2>Bachelor in Mechatronics Engineering</h2>
-							<h3>Universidade Federal de Uberlandia</h3>
-							<h3>08/2015 – 12/2019</h3>
-							<h3>GPA 77/100</h3>
-							<br>
+                <h2 class="center-text">Development</h2>
+                <div class="skill-container"><div class="skills git">Git</div></div>
+                <div class="skill-container"><div class="skills trello">Trello</div></div>
+                <div class="skill-container"><div class="skills jira">Jira</div></div>
+                <div class="skill-container"><div class="skills postman">Postman</div></div>
 
-						</article>
+                <h2 class="center-text">Productivity</h2>
+                <div class="skill-container"><div class="skills office">MS OFFICE</div></div>
+            </section>
 
-							<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h1>CERTIFICATIONS</h1>
-									</div>
-								</header>
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/lucasabbruzzini/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/lucasabbruzzini/lucasabbruzzini.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="mailto:lucas.abbruzzini@proton.me" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; Lucas Rodrigues Abbruzzini. Design by <a href="http://html5up.net">HTML5 UP</a>. Images by <a href="http://unsplash.com">Unsplash</a>.</p>
+            </section>
+        </section>
+    </div>
 
-								<h2>Google Cloud Digital Leader</h2>
-								<h2>AWS Practitione</h2>
-								<h2>Google Azure Fundamentals</h2>
-								<h2>Google Azure Data Fundamentals</h2>
-								<h2>Google Azure AI Fundamentals</h2>
-								<h2>SAFe® 5 Agilist</h2>
-								<h2>Google Project Management Certificate</h2>
-								<h2>LSE – MBA Essentials</h2>
-								
-								<br>
-								
+    <!-- Scripts -->
+    <script src="assets/js/includehtml.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
 
-							</article>
-	
-			</div>
-
-		<!-- Sidebar -->
-			<section id="sidebar">
-
-				<!-- Intro -->
-					<section id="intro">
-						<a href="#" class="logo"><img src="pages/images\1649860029279.jpeg" alt="Avatar"/></a>
-						<header>
-							<h2>Lucas Rodrigues Abbruzzini</h2>
-							<br>
-						</header>
-					</section>
-
-				<!-- Skills -->
-				
-				<head>
-					<style>
-					
-					.skills {
-					  text-align: left; /* Right-align text */
-					  text-indent: 1em;
-					  font-size: small;
-					  padding-top: 10px; /* Add top padding */
-					  padding-bottom: 10px; /* Add bottom padding */
-					  color: white; /* White text color */
-					}
-					
-					.english {width: 100%; background-color: #bbbbbb;} 
-					.portuguese {width: 100%; background-color: #bbbbbb;} 
-					.french {width: 50%; background-color: #bbbbbb;} 
-					.spanish {width: 50%; background-color: #bbbbbb;}
-					.german {width: 20%; background-color: #bbbbbb;} 
-					.office {width: 90%; background-color: #bbbbbb;} 
-					.python {width: 50%; background-color: #bbbbbb;} 
-					.sql {width: 50%; background-color: #bbbbbb;} 
-					.rust {width: 30%; background-color: #bbbbbb;} 
-					.c {width: 30%; background-color: #bbbbbb;} 
-					.matlab {width: 30%; background-color: #bbbbbb;} 
-					.git {width: 30%; background-color: #bbbbbb;} 
-					.trello {width: 30%; background-color: #bbbbbb;} 
-					.jira {width: 30%; background-color: #bbbbbb;} 
-					.postman {width: 30%; background-color: #bbbbbb;} 
-					.devops {width: 30%; background-color: #bbbbbb;} 
-
-					.bash {width: 30%; background-color: #bbbbbb;} 
-					.html {width: 30%; background-color: #bbbbbb;} 
-					.css {width: 30%; background-color: #bbbbbb;} 
-					.js {width: 30%; background-color: #bbbbbb;} 
-				
-					.center-text {
-							text-align: center;
-							padding-top: 20px; /* Add top padding */
-							  padding-bottom: 20px; /* Add bottom padding */
-
-							}
-
-					</style>
-				</head>
-
-					<body>
-					
-						<h2 class="center-text"><br>Languages</h2>
-					
-
-					<div class="skill-container">
-					  <div class="skills english">ENGLISH</div>
-					</div>
-					
-					<div class="skill-container">
-					  <div class="skills portuguese">PORTUGUESE</div>
-					</div>
-					
-					<div class="skill-container">
-					  <div class="skills french">FRENCH</div>
-					</div>
-
-					<div class="skill-container">
-					  <div class="skills spanish">SPANISH</div>
-					</div>
-					
-
-					<div class="skill-container">
-					  <div class="skills german">GERMAN</div>
-					</div>
-
-
-											
-					<h2 class="center-text"><br>Programming</h2>
-					
-					<div class="skill-container">
-					  <div class="skills python">PYTHON</div>
-					</div>
-					
-					<div class="skill-container">
-					  <div class="skills sql">SQL</div>
-					</div>
-					<div class="skill-container">
-					  <div class="skills matlab">MATLAB</div>
-					</div>
-
-					<div class="skill-container">
-					  <div class="skills rust">Rust</div>
-					</div>
-
-					<div class="skill-container">
-					  <div class="skills c">C</div>
-					</div>
-
-					<div class="skill-container">
-					  <div class="skills bash">Bash</div>
-					</div>
-
-					<div class="skill-container">
-					  <div class="skills css">CSS</div>
-					</div>
-					<div class="skill-container">
-					  <div class="skills html">HTML</div>
-					</div>
-
-					<div class="skill-container">
-					  <div class="skills js">JS</div>
-					</div>
-						
-						
-					<h2 class="center-text"><br>evelopment</h2>
-
-
-					<div class="skill-container">
-					  <div class="skills git">Git</div>
-					</div>
-
-					
-					<div class="skill-container">
-					  <div class="skills trello">Trello</div>
-					</div>
-
-					
-					<div class="skill-container">
-					  <div class="skills jira">Jira</div>
-					</div>
-						
-					
-					<div class="skill-container">
-					  <div class="skills postman">Postman</div>
-					</div>
-						
-
-					<h2 class="center-text"><br>
-						Productivity</h2>
-						
-					<div class="skill-container">
-					  <div class="skills office">MS OFFICE</div>
-					</div>
-				
-				
-					</body>
-					
-					
-				<!-- Footer -->
-					<section id="footer">
-						<ul class="icons">
-							<br>
-							<li><a href="https://www.linkedin.com/in/lucasabbruzzini/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/lucasabbruzzini/lucasabbruzzini.github.io" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:lucas.abbruzzini@proton.me" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-					</section>
-
-			</section>
-
-	</div>
-
-				
-
-		<!-- Scripts -->
-			<script src="assets/js/includehtml.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
