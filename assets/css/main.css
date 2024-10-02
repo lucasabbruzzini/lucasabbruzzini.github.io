@@ -1,186 +1,91 @@
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
-
-/* Reset Styles */
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/* Reset CSS for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-/* Base Styles */
+/* Body styling */
 body {
-    background: #f4f4f4;
-    color: #646464;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 14pt;
-    font-weight: 400;
-    line-height: 1.75;
-    -webkit-text-size-adjust: none;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    color: #3c3b3b;
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.25em;
-    line-height: 1.65;
-    text-transform: uppercase;
-    margin: 0 0 0 0;
+/* Container for centering content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Header styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Content styling */
+main {
+  padding: 20px;
+}
+
+/* Section headings */
 h2 {
-    font-size: 1.5em;
+  margin: 20px 0;
+  font-size: 1.5em;
+  border-bottom: 2px solid #333;
 }
 
-h3 {
-    font-size: 1em;
-    font-weight: 500;
-    text-transform: none;
+/* Footer styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
 }
 
-a {
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
-    color: inherit;
-    text-decoration: none;
-}
+/* Responsive design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
 
-a:hover {
-    border-bottom-color: transparent;
-    color: #2ebaae !important;
-}
+  .container {
+    padding: 10px;
+  }
 
-/* Navigation Menu Styles */
-nav.links {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  header, footer {
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-}
-
-nav.links ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav.links li {
-    margin: 0 20px; /* Spacing between links */
-}
-
-nav.links a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-family: "Raleway", Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-}
-
-nav.links a:hover {
-    background-color: #555;
-    color: #fff;
-    border-radius: 5px;
-}
-
-/* Add padding to the body to prevent content overlap */
-body {
-    padding-top: 60px; /* Adjust to match the height of the fixed navigation */
-}
-
-/* Header */
-#header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff;
-    line-height: 3.5em;
-    position: relative;
-    margin: 0 0 2em 0;
-}
-
-#header h1 {
-    margin: 0 3em;
-    font-size: 1.5em;
-}
-
-/* Footer */
-#footer .icons {
-    color: #aaaaaa;
-    font-size: 1.5em;
-    text-align: center;
-    letter-spacing: 0.25em;
-}
-
-#footer .copyright {
-    color: #aaaaaa;
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 980px) {
-    nav.links ul {
-        flex-direction: column; /* Stack links vertically on smaller screens */
-    }
-
-    nav.links li {
-        margin: 10px 0; /* Add vertical spacing for stacked links */
-    }
-
-    #header h1 {
-        margin: 0;
-        text-align: center;
-    }
-
-    #header {
-        line-height: 3em;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    body, input, select, textarea {
-        font-size: 12pt;
-    }
-
-    nav.links a {
-        font-size: 14px; /* Adjust font size for small screens */
-        padding: 10px;
-    }
-
-    #header h1 {
-        font-size: 1.25em;
-    }
+  }
 }
 
