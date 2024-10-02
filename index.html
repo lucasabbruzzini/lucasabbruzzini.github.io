@@ -7,126 +7,31 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav id="header">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/portfolio.html">Portfolio</a></li>
-        </ul>
-    </nav>
+    <!-- Include the header and sidebar dynamically -->
+    <div id="header-placeholder"></div>
+    <div id="sidebar-placeholder"></div>
 
-    <!-- Wrapper -->
+    <!-- Wrapper for the main content -->
     <div id="wrapper">
         <!-- Main Content -->
         <main id="main">
-            <!-- Experience Section -->
+            <!-- Page content will go here -->
             <article class="post">
                 <header>
-                    <h1>Experience</h1>
+                    <h1>Welcome</h1>
                 </header>
-                <section>
-                    <h2>Tech Strategy Analyst</h2>
-                    <h3>Accenture</h3>
-                    <h3>05/2021 - Present</h3>
-                    <ul>
-                        <li><strong>Project & Program Management:</strong> Overseeing workstreams, managing timelines, and resolving issues.</li>
-                        <li><strong>Python Development & Data Management:</strong> Focusing on ETL processes, frontend integration, and debugging.</li>
-                        <li><strong>Data Analysis & Reporting:</strong> Creating dashboards and optimizing SQL queries for reporting accuracy.</li>
-                        <li><strong>Collaboration & Communication:</strong> Implementing programs and connecting technical and business leadership.</li>
-                        <li><strong>Strategic Problem Solving & Planning:</strong> Structuring problems and planning roadmaps.</li>
-                        <li><strong>Business Case & IT Strategy:</strong> Developing IT strategies and opportunity assessments.</li>
-                    </ul>
-                </section>
-            </article>
-
-            <!-- Education Section -->
-            <article class="post">
-                <header>
-                    <h1>Education</h1>
-                </header>
-                <section>
-                    <h2>MSc in Financial Engineering</h2>
-                    <h3>WorldQuant University</h3>
-                    <h3>10/2023 – Present</h3>
-                    <h3>GPA 89%</h3>
-                </section>
-            </article>
-
-            <!-- Certifications Section -->
-            <article class="post">
-                <header>
-                    <h1>Certifications</h1>
-                </header>
-                <ul>
-                    <li>Google Cloud Digital Leader</li>
-                    <li>AWS Practitioner</li>
-                    <li>Google Azure Fundamentals</li>
-                    <li>SAFe® 5 Agilist</li>
-                    <li>Google Project Management Certificate</li>
-                    <li>LSE – MBA Essentials</li>
-                </ul>
+                <p>This is the main content area. Navigate using the menu above.</p>
             </article>
         </main>
-
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <!-- Intro -->
-            <section id="intro">
-                <a href="#" class="logo"><img src="pages/images/1649860029279.jpeg" alt="Avatar of Lucas Rodrigues Abbruzzini"></a>
-                <header>
-                    <h2>Lucas Rodrigues Abbruzzini</h2>
-                </header>
-            </section>
-
-            <!-- Skills Section -->
-            <section>
-                <h2 class="center-text">Languages</h2>
-                <div class="skill-container"><div class="skills">ENGLISH</div></div>
-                <div class="skill-container"><div class="skills">PORTUGUESE</div></div>
-                <div class="skill-container"><div class="skills">FRENCH</div></div>
-                <div class="skill-container"><div class="skills">SPANISH</div></div>
-                <div class="skill-container"><div class="skills">GERMAN</div></div>
-
-                <h2 class="center-text">Programming</h2>
-
-                <div class="skill-container"><div class="skills">PYTHON</div></div>
-                <div class="skill-container"><div class="skills">SQL</div></div>
-                <div class="skill-container"><div class="skills">MATLAB</div></div>
-                <div class="skill-container"><div class="skills">RUST</div></div>
-                <div class="skill-container"><div class="skills">C</div></div>
-                <div class="skill-container"><div class="skills">BASH</div></div>
-                <div class="skill-container"><div class="skills">CSS</div></div>
-                <div class="skill-container"><div class="skills">HTML</div></div>
-                <div class="skill-container"><div class="skills">JS</div></div>
-
-                <h2 class="center-text">Development</h2>
-                <div class="skill-container"><div class="skills">GIT</div></div>
-                <div class="skill-container"><div class="skills">TRELLO</div></div>
-                <div class="skill-container"><div class="skills">JIRA</div></div>
-                <div class="skill-container"><div class="skills">POSTMAN</div></div>
-
-                <h2 class="center-text">Productivity</h2>
-                <div class="skill-container"><div class="skills">MS OFFICE</div></div>
-            </section>
-
-            <!-- Footer -->
-            <section id="footer">
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/lucasabbruzzini/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/lucasabbruzzini/lucasabbruzzini.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="mailto:lucas.abbruzzini@proton.me" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <p>&copy; Lucas Rodrigues Abbruzzini. Design by <a href="http://html5up.net">HTML5 UP</a>. Images by <a href="http://unsplash.com">Unsplash</a>.</p>
-            </section>
-        </aside>
     </div>
 
     <!-- Scripts -->
     <script src="assets/js/includehtml.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script>
+        // Load the header and sidebar
+        document.getElementById('header-placeholder').innerHTML = '<object type="text/html" data="header.html"></object>';
+        document.getElementById('sidebar-placeholder').innerHTML = '<object type="text/html" data="sidebar.html"></object>';
+    </script>
 </body>
 </html>
+
