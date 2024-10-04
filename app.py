@@ -102,9 +102,10 @@ def index():
             'coding_skills': [
                 {'name': 'Rust', 'level': 20, 'icon': 'fab fa-rust'},
                 {'name': 'Python', 'level': 70, 'icon': 'fab fa-python'},
-                {'name': 'SQL', 'level': 60, 'icon': 'fas fa-database'},
+                {'name': 'SQL/PostegreSQL', 'level': 60, 'icon': 'fas fa-database'},
                 {'name': 'C', 'level': 30, 'icon': 'fab fa-c'},
-              #  {'name': 'MATLAB', 'level': 50, 'icon': 'fa-solid fa-code'},
+            #   {'name': 'MATLAB', 'level': 50, 'icon': 'fa-solid fa-code'},
+                {'name': 'BASH', 'level': 50, 'icon': 'fa-solid fa-terminal'},
                 {'name': 'JavaScript', 'level': 20, 'icon': 'fab fa-js-square'},
                 {'name': 'HTML/CSS', 'level': 20, 'icon': 'fab fa-html5'},
             ],
@@ -115,9 +116,9 @@ def index():
 #                {'name': 'Azure', 'level': 20, 'icon': 'fab fa-microsoft'},
 #                {'name': 'GCP', 'level': 20, 'icon': 'fas fa-cloud'},
                 {'name': 'Git', 'level': 20, 'icon': 'fab fa-git-alt'},
-                {'name': 'Jira', 'level': 20, 'icon': 'fab fa-jira'},
-                {'name': 'Trello', 'level': 20, 'icon': 'fab fa-trello'},
-                {'name': 'Azure DevOps', 'level': 20, 'icon': 'fas fa-code-branch'}
+                {'name': 'Jira/Trello/AzureDevOps', 'level': 20, 'icon': 'fab fa-jira'},
+            #    {'name': 'Trello', 'level': 20, 'icon': 'fab fa-trello'},
+            #    {'name': 'Azure DevOps', 'level': 20, 'icon': 'fas fa-code-branch'}
             ],
         'languages': [
             {'name': 'English', 'level': 100, 'flag': 'us'},
