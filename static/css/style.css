@@ -241,12 +241,12 @@ h4 {
 /* Place the education section in the third column */
 .edu {
     grid-column: 3; /* Third column */
-    grid-row: 1/5;
+    grid-row: 1/6;
 }
 
 .cert {
     grid-column: 3; /* Third column */
-    grid-row: 5/10;
+    grid-row: 6/10;
 }
 
 
