@@ -248,22 +248,16 @@ h4 {
     grid-row: 5/10;
 }
 
-/* Place the skills section in the fourth column */
-.skills {
-    grid-column: 4; /* Fourth column */
-    grid-row: 8/10;
-
-}
 
 .lang {
     grid-column: 4; /* Fourth column */
-    grid-row: 1/4;
+    grid-row: 1/5;
 
 }
 
 .code {
     grid-column: 4; /* Fourth column */
-    grid-row: 4/8;
+    grid-row: 5/10;
 
 }
 
