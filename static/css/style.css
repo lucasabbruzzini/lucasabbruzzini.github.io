@@ -125,10 +125,17 @@ h4 {
     font-size: 12px;
 }
 
-.skill-name i, .language-name .flag-icon {
+.skill-name i {
     margin-right: 10px;
     width: 25px;
     text-align: center;
+}
+
+.language-name .flag-icon {
+    width: 1.5em;
+    height: 1.125em;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 .skill-bar, .language-bar {
