@@ -176,6 +176,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 5px;
+    padding: 10px
 }
 
 .portfolio-item {
