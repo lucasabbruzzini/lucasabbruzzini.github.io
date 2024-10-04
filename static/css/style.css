@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .layout {
@@ -252,13 +252,13 @@ h4 {
 
 .lang {
     grid-column: 4; /* Fourth column */
-    grid-row: 1/5;
+    grid-row: 1/4;
 
 }
 
 .code {
     grid-column: 4; /* Fourth column */
-    grid-row: 5/10;
+    grid-row: 4/10;
 
 }
 
