@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cv_data.name }} - CV & Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+</head>
+<body>
+    <div class="layout">
+        <main class="main-content">
+            <div class="grid-container">
+                <!-- Block 1: Bio -->
+                <section id="bio" class="content-block bio">
+                    <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="{{ cv_data.name }}" class="profile-image">
+                    <h1>{{ cv_data.name }}</h1>
+                    <p class="title">{{ cv_data.title }}</p>
+                    <h2>About Me</h2>
+                    <p>{{ cv_data.summary }}</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> {{ cv_data.email }}</p>
+                        <p><i class="fas fa-phone"></i> {{ cv_data.phone }}</p>
+                        <p><i class="fas fa-map-marker-alt"></i> {{ cv_data.location }}</p>
+                        <p><i class="fas fa-home"></i> {{ cv_data.place_of_living }}</p>
+                        <p><i class="fas fa-passport"></i> {{ cv_data.citizenship }}</p>
+                        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com{{ cv_data.linkedin }}" target="_blank">{{ cv_data.linkedin }}</a></p>
+                        <p><i class="fab fa-github"></i> <a href="https://{{ cv_data.github }}" target="_blank">{{ cv_data.github }}</a></p>
+                    </div>
+                </section>
+
+                <!-- Block 2: Experience -->
+                <section id="experience" class="content-block experience">
+                    <h2>Experience</h2>
+                    {% for job in cv_data.experience %}
+                        <div class="experience-item">
+                            <h3><strong>{{ job.title }}</strong> at <strong>{{ job.company }}</strong> from {{ job.period }}</h3>
+                            <ul>
+                                {% for bullet in job.description %}
+                                    <li>{{ bullet }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Block 3: Education -->
+                <section id="education" class="content-block edu">
+                    <h2>Education</h2>
+                    <div class="education-certifications">
+                        {% for edu in cv_data.education_and_skills.education %}
+                            <div class="education-item">
+                                <h4><strong>{{ edu.degree }}</strong></h4>
+                                <p>{{ edu.institution }}, {{ edu.year }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <!-- Block 4: Certifications -->
+                <section id="certifications" class="content-block cert">
+                    <h2>Certifications</h2>
+                    {% for cert in cv_data.education_and_skills.certifications %}
+                        <div class="certification-item">
+                            <p><i class="{{ cert.icon }}"></i> {{ cert.name }}</p>
+                        </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Block 5: Skills -->
+                <section id="skills-code" class="content-block code">
+                    <h2>Code</h2>
+                    <div class="skills">
+                        {% for skill in cv_data.education_and_skills.coding_skills %}
+                            <div class="skill">
+                                <span class="skill-name"><i class="{{ skill.icon }}"></i> {{ skill.name }}</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: {{ skill.level }}%"></div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <section id="skills-dev" class="content-block skills">
+                    <h2>Dev and Productivity</h2>
+                    <div class="skills">
+                        {% for skill in cv_data.education_and_skills.other_skills %}
+                            <div class="skill">
+                                <span class="skill-name"><i class="{{ skill.icon }}"></i> {{ skill.name }}</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: {{ skill.level }}%"></div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section id="languages" class="content-block lang">
+                    <h2>Languages</h2>
+                    <div class="languages">
+                        {% for language in cv_data.education_and_skills.languages %}
+                            <div class="language">
+                                <span class="language-name">
+                                    <span class="flag-icon flag-icon-{{ language.flag }} round-flag"></span> {{ language.name }}
+                                </span>
+                                <div class="language-bar">
+                                    <div class="language-level" style="width: {{ language.level }}%"></div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <!-- Block 6: Portfolio -->
+                <section id="portfolio" class="content-block port">
+                    <h2>Portfolio</h2>
+                    <div class="portfolio-grid">
+                        {% for item in portfolio_items %}
+                            <div class="portfolio-item" data-category="{{ item.category }}">
+                                <a href="{{ item.link }}" target="_blank">
+
+                                <div class="portfolio-item-content">
+                                    <h3>{{ item.title }}</h3>
+                                    <p>{{ item.description }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
