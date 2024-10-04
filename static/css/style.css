@@ -136,6 +136,7 @@ h4 {
     height: 1.125em;
     margin-right: 10px;
     display: inline-block;
+    margin-bottom: 3px;
 }
 
 .skill-bar, .language-bar {
@@ -143,7 +144,7 @@ h4 {
     height: 10px;
     border-radius: 5px;
     overflow: hidden;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .skill-level, .language-level {
