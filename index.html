@@ -16,7 +16,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            font-size: clamp(10px, 1vw, 12px);
+            font-size: clamp(10px, 10px, 12px);
         }
 
         /* Layout */
@@ -30,8 +30,8 @@
         .main-content {
             display: grid;
             grid-template-columns: 1fr 2fr 1fr 1fr 1fr; /* Base layout for large screens */
-            gap: 20px;
-            padding: clamp(10px, 2vw, 30px);
+            gap: 10px;
+            padding: 10px;
             margin: 0 auto;
             max-width: 1800px;
             width: 100%;
@@ -42,7 +42,7 @@
         /* Content Blocks */
         .content-block {
             background-color: #ffffff;
-            padding: clamp(15px, 2vw, 30px);
+            padding: 10px;
             border: 1px solid #e0e0e0;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -59,17 +59,18 @@
         }
 
         h1 { 
-            font-size: clamp(20px, 2.5vw, 28px);
+            font-size: 20px;
             font-weight: bold; 
         }
 
         h2 { 
-            font-size: clamp(14px, 2vw, 24px);
-            margin-bottom: clamp(10px, 1.5vw, 20px);
+            font-size: 14px;
+            margin-bottom: 3px;
+
         }
 
         h3, h4 { 
-            font-size: clamp(12px, 1.5vw, 18px);
+            font-size: 12px;
             margin-bottom: 3px;
         }
 
@@ -93,7 +94,6 @@
 
         #certifications {
             grid-column: 3;
-            margin-top: 20px;
             grid-row: 5/12
         }
 
