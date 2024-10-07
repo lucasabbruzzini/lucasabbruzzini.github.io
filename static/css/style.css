@@ -1,5 +1,3 @@
-/* Custom styles on top of Milligram */
-
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -18,7 +16,7 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr; /* Set to a single column */
     gap: 20px;
     padding: clamp(10px, 2vw, 30px);
     margin: 0;
@@ -107,30 +105,23 @@ h3, h4 {
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-#education,
-#certifications {
-    grid-column: span 2; /* This ensures both blocks take up the full width */
-}
+
 /* Responsive Grid Layout */
 @media (min-width: 1200px) {
     .main-content {
-        grid-template-columns: 250px 2fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr; /* Single column for larger screens */
     }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .main-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    #experience.content-block {
-        grid-column: span 2;
+        grid-template-columns: 1fr; /* Single column for medium screens */
     }
 }
 
 @media (max-width: 767px) {
     .main-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column for mobile screens */
     }
     
     .content-block {
@@ -169,3 +160,4 @@ h3, h4 {
 #portfolio.content-block {
     width: 100%;
 }
+
