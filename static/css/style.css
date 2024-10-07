@@ -35,17 +35,17 @@ h1, h2, h3, h4 {
     color: #4FB3BF;
 }
 
-h1 { 
+h1 {
     font-size: clamp(20px, 2.5vw, 28px);
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-h2 { 
+h2 {
     font-size: clamp(18px, 2vw, 24px);
     margin-bottom: clamp(10px, 1.5vw, 20px);
 }
 
-h3, h4 { 
+h3, h4 {
     font-size: clamp(14px, 1.5vw, 18px);
     margin-bottom: 3px;
 }
@@ -76,19 +76,21 @@ h3, h4 {
 }
 
 #certifications {
-    grid-column: 3; /* Place 'Certifications' in the fourth column */
+    grid-column: 3; /* Place 'Certifications' in the third column */
+    margin-top: 20px; /* Add spacing between 'Education' and 'Certifications' */
 }
 
 #skills {
-    grid-column: 4; /* Place 'Skills' in the fifth column */
+    grid-column: 4; /* Place 'Skills' in the fourth column */
 }
 
 #languages {
-    grid-column: 4; /* Place 'Skills' in the fifth column */
+    grid-column: 4; /* Place 'Languages' in the fourth column */
+    margin-top: 20px; /* Add spacing between 'Skills' and 'Languages' */
 }
 
 #portfolio {
-    grid-column: span 5; /* Make 'Portfolio' span all columns */
+    grid-column: 5; /* Place 'Portfolio' in the fifth column */
 }
 
 .profile-image {
@@ -140,17 +142,21 @@ h3, h4 {
     .main-content {
         grid-template-columns: 1fr 1fr; /* Switch to 2 columns for medium screens */
     }
+
+    #education, #certifications, #skills, #languages, #portfolio {
+        grid-column: span 2; /* Span across both columns */
+    }
 }
 
 @media (max-width: 767px) {
     .main-content {
         grid-template-columns: 1fr; /* Switch to a single column for mobile screens */
     }
-    
+
     .content-block {
         margin-bottom: 15px;
     }
-    
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
@@ -173,29 +179,20 @@ h3, h4 {
 /* Skill and Language Bars */
 .skill-bar,
 .language-bar {
-    background-color: #e0e0e0; /* Background color of the progress bar */
-    border-radius: 5px; /* Rounded corners */
-    height: 10px; /* Height of the progress bar */
-    margin-bottom: 10px; /* Spacing below each bar */
-    overflow: hidden; /* Ensure content doesn't overflow */
-    position: relative; /* Positioning for inner bar */
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Inner bars that indicate the percentage */
 .skill-level,
 .language-level {
-    background-color: #4FB3BF; /* Color of the filled part of the bar */
-    height: 100%; /* Match the height of the parent */
-    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
-    transition: width 0.4s ease; /* Smooth width transition */
-}
-
-
-/* Remove fixed widths */
-#bio.content-block,
-#experience.content-block,
-#education-skills.content-block,
-#portfolio.content-block {
-    width: 100%;
+    background-color: #4FB3BF;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.4s ease;
 }
 
