@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
+    <style>
+        /* Previous styles remain the same until the grid layout */
+        
+        /* Updated Grid Layout */
+        .main-content {
+            display: grid;
+            gap: 20px;
+            padding: clamp(10px, 2vw, 30px);
+            margin: 0 auto;
+            max-width: 1800px;
+            width: 100%;
+        }
 
+        /* Responsive Grid Layout */
+        @media (min-width: 1200px) {
+            .main-content {
+                grid-template-columns: minmax(250px, 1fr) minmax(300px, 2fr) minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+            }
+            
+            /* Column assignments */
+            #bio {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            
+            #experience {
+                grid-column: 2;
+                grid-row: 1;
+            }
+            
+            /* Stack education and certifications in column 3 */
+            #education {
+                grid-column: 3;
+                grid-row: 1;
+            }
+            
+            #certifications {
+                grid-column: 3;
+                grid-row: 2;
+            }
+            
+            /* Stack skills and languages in column 4 */
+            #skills-code {
+                grid-column: 4;
+                grid-row: 1;
+            }
+            
+            #languages {
+                grid-column: 4;
+                grid-row: 2;
+            }
+            
+            /* Portfolio in column 5 */
+            #portfolio {
+                grid-column: 5;
+                grid-row: 1;
+            }
+        }
+
+        /* Tablet Layout */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .main-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            #bio {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            
+            #experience {
+                grid-column: 2;
+                grid-row: 1 / span 2;
+            }
+            
+            #education,
+            #certifications {
+                grid-column: 1;
+            }
+            
+            #skills-code,
+            #languages {
+                grid-column: 1;
+            }
+            
+            #portfolio {
+                grid-column: 2;
+            }
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 767px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            #bio,
+            #experience,
+            #education,
+            #certifications,
+            #skills-code,
+            #languages,
+            #portfolio {
+                grid-column: 1;
+            }
+        }
+
+        /* Rest of your existing styles remain the same */
+    </style>
+</head>
 <body>
     <div class="layout">
-        <main class="main-content grid-container">
+        <main class="main-content">
+
             <!-- Block 1: Bio -->
             <section id="bio" class="content-block bio">
                 <img src="static/images/profile.jpeg" alt="Profile picture of Lucas Abbruzzini" class="profile-image">
