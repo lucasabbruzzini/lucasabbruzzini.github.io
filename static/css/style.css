@@ -76,11 +76,15 @@ h3, h4 {
 }
 
 #certifications {
-    grid-column: 4; /* Place 'Certifications' in the fourth column */
+    grid-column: 3; /* Place 'Certifications' in the fourth column */
 }
 
 #skills {
-    grid-column: 5; /* Place 'Skills' in the fifth column */
+    grid-column: 4; /* Place 'Skills' in the fifth column */
+}
+
+#languages {
+    grid-column: 4; /* Place 'Skills' in the fifth column */
 }
 
 #portfolio {
