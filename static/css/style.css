@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    font-size: clamp(11px, 1vw, 14px);
+    font-size: clamp(10px, 1vw, 11px);
 }
 
 .layout {
@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr; /* Use fractional units for flexible column widths */
     gap: 20px;
-    padding: clamp(10px, 2vw, 30px);
+    padding: clamp(5px, 2vw, 10px);
     margin: 0;
     height: auto;
     overflow: visible;
@@ -36,30 +36,29 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: clamp(20px, 2.5vw, 28px);
+    font-size: clamp(16px, 2.5vw, 20px);
     font-weight: bold;
 }
 
 h2 {
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(14px, 2vw, 18px);
     margin-bottom: clamp(10px, 1.5vw, 20px);
 }
 
 h3, h4 {
-    font-size: clamp(14px, 1.5vw, 18px);
+    font-size: clamp(12px, 1.5vw, 16px);
     margin-bottom: 3px;
 }
 
 .content-block {
     background-color: #ffffff;
-    padding: clamp(15px, 2vw, 30px);
+    padding: clamp(10px, 2vw, 20px);
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 /* Place each section into specific columns */
@@ -77,7 +76,6 @@ h3, h4 {
 
 #certifications {
     grid-column: 3; /* Place 'Certifications' in the third column */
-    margin-top: 20px; /* Add spacing between 'Education' and 'Certifications' */
 }
 
 #skills {
@@ -86,7 +84,6 @@ h3, h4 {
 
 #languages {
     grid-column: 4; /* Place 'Languages' in the fourth column */
-    margin-top: 20px; /* Add spacing between 'Skills' and 'Languages' */
 }
 
 #portfolio {
@@ -112,7 +109,7 @@ h3, h4 {
 
 .skill-name, 
 .language-name {
-    font-size: clamp(12px, 1.2vw, 14px);
+    font-size: clamp(10px, 1.2vw, 12px);
 }
 
 .portfolio-grid {
