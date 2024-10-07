@@ -170,11 +170,26 @@ h3, h4 {
     margin-bottom: clamp(5px, 1vw, 10px);
 }
 
+/* Skill and Language Bars */
 .skill-bar,
 .language-bar {
-    height: clamp(8px, 1vw, 10px);
-    margin-bottom: clamp(8px, 1vw, 10px);
+    background-color: #e0e0e0; /* Background color of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    height: 10px; /* Height of the progress bar */
+    margin-bottom: 10px; /* Spacing below each bar */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    position: relative; /* Positioning for inner bar */
 }
+
+/* Inner bars that indicate the percentage */
+.skill-level,
+.language-level {
+    background-color: #4FB3BF; /* Color of the filled part of the bar */
+    height: 100%; /* Match the height of the parent */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    transition: width 0.4s ease; /* Smooth width transition */
+}
+
 
 /* Remove fixed widths */
 #bio.content-block,
