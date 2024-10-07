@@ -16,7 +16,7 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr; /* Set to a single column */
+    grid-template-columns: 150px 300px 200px 250px 1fr; /* Set columns with fixed widths */
     gap: 20px;
     padding: clamp(10px, 2vw, 30px);
     margin: 0;
@@ -105,6 +105,33 @@ h3, h4 {
     aspect-ratio: 16/9;
     object-fit: cover;
 }
+
+/* Place each section into specific columns */
+#bio {
+    grid-column: 1; /* Place 'Bio' in the first column */
+}
+
+#experience {
+    grid-column: 2; /* Span 'Experience' across columns 2 to 3 */
+}
+
+#education {
+    grid-column: 3; /* Place 'Education' in the fourth column */
+}
+
+#certifications {
+    grid-column: 3; /* Place 'Certifications' in the fifth column */
+}
+
+#skills {
+    grid-column: 4; /* Place 'Skills' in the third column */
+}
+
+#portfolio {
+    grid-column: 4; /* Place 'Skills' in the third column */
+}
+
+
 
 /* Responsive Grid Layout */
 @media (min-width: 1200px) {
