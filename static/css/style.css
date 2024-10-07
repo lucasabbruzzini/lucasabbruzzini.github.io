@@ -107,7 +107,10 @@ h3, h4 {
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-
+#education,
+#certifications {
+    grid-column: span 2; /* This ensures both blocks take up the full width */
+}
 /* Responsive Grid Layout */
 @media (min-width: 1200px) {
     .main-content {
